@@ -1,0 +1,125 @@
+/* Fullscreen overlay background */
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Main container */
+  .login-popup-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Title and close icon */
+  .login-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-title h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .login-title img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* Input fields */
+  .Login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .Login-popup-inputs input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .Login-popup-inputs input:focus {
+    border-color: #ff6600;
+  }
+  
+  /* Submit button */
+  .login-popup-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-popup-container button:hover {
+    background-color: #e55b00;
+  }
+  
+  /* Terms & conditions */
+  .login-popup-condition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .login-popup-condition input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  .login-popup-condition label {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  
+  /* Switch between login/signup */
+  .login-popup-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #444;
+  }
+  
+  .login-popup-container p span {
+    color: #ff6600;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .login-popup-container p span:hover {
+    text-decoration: underline;
+  }
+  
